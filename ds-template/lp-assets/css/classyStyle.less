@@ -1,0 +1,750 @@
+/*============    RESET    ===========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* hide horizontal scroll */
+//body {
+//  overflow-x: hidden;
+//}
+
+/*============    FONTS    ===========*/
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+  url('../fonts/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl Bold';
+  src: url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'),
+  url('../fonts/MuseoSansCyrl-900.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knockout Liteweight';
+  src: url('../fonts/Knockout-HTF49-Liteweight.woff2') format('woff2'),
+  url('../fonts/Knockout-HTF49-Liteweight.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Knockout Liteweight Regular';
+  src: url('../fonts/Knockout-HTF26-JuniorFlyweight.woff2') format('woff2'),
+  url('../fonts/Knockout-HTF26-JuniorFlyweight.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.knockoutFlyweightR {
+  font-family: 'Knockout Liteweight Regular';
+  font-weight: 500;
+  font-style: normal;
+}
+
+.knockoutL {
+  font-family: 'Knockout Liteweight';
+  font-weight: 500;
+
+}
+
+.rubikR {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+}
+
+.museoSansB {
+  font-family: 'Museo Sans Cyrl Bold';
+  font-weight: bold;
+}
+
+/*Variables for colors*/
+.pink {
+  color: rgb(235, 97, 162);
+}
+
+.bgPink {
+  background: rgb(235, 97, 162);
+}
+
+.black {
+  color: rgb(0, 0, 0);
+}
+
+.bgblack {
+  background: rgb(34, 34, 34);
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.bgWhite {
+  background: rgb(255, 255, 255);
+}
+
+.grey {
+  color: rgb(217, 217, 217);
+}
+
+.bgGrey {
+  background: rgb(240, 240, 240);
+}
+
+.h1 {
+  .knockoutL;
+  font-size: 72px;
+  .black;
+}
+
+.h4 {
+  .knockoutL;
+  font-size: 35px;
+  .grey;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999999; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.95); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #000000;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  width: 54%;
+  margin: 0 auto;
+  padding: 0;
+  .logoWrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    img {
+      margin: 0 auto;
+      width: 300px;
+    }
+  }
+
+  .enterDateWrap {
+
+    padding: 30px 20px 0px 20px;
+    background: #000000;
+    .enterDate {
+      .knockoutL;
+      color: #ffffff;
+      font-size: 34px;
+      text-align: center;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+    .howDirtyWrap {
+      display: none;
+    }
+    .howDirty {
+      .rubikR;
+      color: #ffffff;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .dirtyLinksWrap {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+    .dirtyLinks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+    }
+    .linkDesc {
+      .rubikR;
+      color: #ffffff;
+      font-size: 22px;
+    }
+    .linkBtn {
+      .rubikR;
+      width: 150px;
+      background: rgb(243, 106, 172);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #ffffff;
+      font-size: 35px;
+      margin-bottom: 12px;
+
+    }
+
+    .selectLevel {
+      .rubikR;
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 70px;
+    }
+
+  }
+  .answerWrap {
+    text-align: center;
+    .yes {
+      width: 150px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .rubikR;
+      color: #ffffff;
+      background: green;
+      border: none;
+      font-size: 35px;
+      margin-right: 20px;
+
+    }
+    .no {
+      width: 150px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .rubikR;
+      background: red;
+      border: none;
+      color: #ffffff;
+      font-size: 35px;
+
+    }
+  }
+
+  .animateErrorBirth {
+    animation: jumpTextHigh infinite 6s ease-in-out;
+    color: red;
+  }
+
+  // jumpText start
+  @keyframes jumpText {
+    0% {
+      opacity: 1;
+
+    }
+    5% {
+      opacity: 0.9;
+
+    }
+    10% {
+      opacity: 0.8;
+
+    }
+    15% {
+      opacity: 0.75;
+
+    }
+
+    25% {
+      opacity: 0.65;
+
+    }
+    30% {
+      opacity: 0.6;
+
+    }
+    35% {
+      opacity: 0.5;
+
+    }
+    40% {
+      opacity: 0.4;
+
+    }
+
+    45% {
+      opacity: 0.3;
+
+    }
+
+    50% {
+      opacity: 0.2;
+    }
+
+    60% {
+      opacity: 0.3;
+    }
+    65% {
+      opacity: 0.4;
+    }
+
+    70% {
+      opacity: 0.5;
+    }
+
+    75% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.65;
+    }
+    85% {
+      opacity: 0.75;
+    }
+    90% {
+      opacity: 0.8;
+    }
+    95% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  // jumpText end
+
+  .errorBirth {
+    display: none;
+    .museoSansB;
+    color: red;
+    font-size: 22px;
+    padding-top: 38px;
+    padding-bottom: 0px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 29px;
+    animation: jumpText infinite 3s ease-in-out;
+
+  }
+
+}
+
+//  for check box start
+
+.remember {
+  text-align: center;
+  margin-top: 50px;
+  .container {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .rubikR;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+
+    background: rgb(243, 106, 172);
+
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 9px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+//  for check box end
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+  .accessModal {
+    padding-top: 0;
+  }
+
+  .accessModalContent {
+    padding-top: 30px;
+    width: 100%;
+    .modal-body {
+      width: 100%;
+    }
+  }
+
+  .modal-body {
+
+    .logoWrap {
+      img {
+        width: 160px;
+      }
+    }
+    .answerWrap {
+      .enterDate {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 25px;
+      }
+      .no, .yes {
+        width: 100px;
+        font-size: 22px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+
+    .enterDateWrap {
+      padding-top: 20px;
+      padding-right: 30px;
+      padding-left: 30px;
+      .dirtyLinks{
+        margin-bottom: 25px;
+      }
+      .dirtyLinksWrap{
+        flex-direction: column;
+        align-items: center;
+      }
+      .howDirty {
+        font-size: 21px;
+        margin-bottom: 25px;
+
+      }
+      .linkBtn {
+        width: 100px;
+        font-size: 22px;
+
+      }
+      .linkDesc {
+        font-size: 20px;
+      }
+      .selectLevel{
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+
+    .errorBirth{
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+
+  }
+
+  .remember {
+    margin-top: 40px;
+    .container {
+      font-size: 19px;
+      .checkmark{
+        width: 21px;
+        height: 21px;
+        &:after{
+          left: 7px;
+          width: 8px;
+          height: 12px;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+
+  .accessModal {
+    padding-top: 0;
+  }
+
+  .accessModalContent {
+    padding-top: 30px;
+    width: 100%;
+    .modal-body {
+      width: 100%;
+    }
+  }
+
+  .modal-body {
+
+    .logoWrap {
+      img {
+        width: 160px;
+      }
+    }
+    .answerWrap {
+      .enterDate {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 25px;
+      }
+      .no, .yes {
+        width: 100px;
+        font-size: 22px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+
+    .enterDateWrap {
+      padding-top: 20px;
+      padding-right: 30px;
+      padding-left: 30px;
+      .dirtyLinks{
+        margin-bottom: 25px;
+      }
+  .dirtyLinksWrap{
+    flex-direction: column;
+    align-items: center;
+  }
+      .howDirty {
+        font-size: 21px;
+        margin-bottom: 25px;
+
+      }
+      .linkBtn {
+        width: 100px;
+        font-size: 22px;
+
+      }
+      .linkDesc {
+        font-size: 20px;
+      }
+      .selectLevel{
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+
+ .errorBirth{
+   font-size: 17px;
+   letter-spacing: 2px;
+ }
+
+  }
+
+  .remember {
+    margin-top: 40px;
+    .container {
+      font-size: 19px;
+      .checkmark{
+        width: 21px;
+        height: 21px;
+        &:after{
+          left: 7px;
+          width: 8px;
+          height: 12px;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .accessModal {
+    padding-top: 0;
+  }
+
+  .accessModalContent {
+    padding-top: 60px;
+    width: 100%;
+    .modal-body {
+      width: 100%;
+    }
+  }
+
+  .modal-body {
+
+    .logoWrap {
+      img {
+        width: 220px;
+      }
+    }
+    .answerWrap {
+      .enterDate {
+        font-size: 28px;
+      }
+      .no, .yes {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 30px;
+      }
+    }
+
+    .enterDateWrap {
+      padding-right: 30px;
+      padding-left: 30px;
+      .howDirty {
+        font-size: 28px;
+      }
+      .linkBtn {
+        width: 120px;
+        font-size: 28px;
+      }
+      .linkDesc {
+        font-size: 20px;
+      }
+    }
+
+  }
+
+  .remember {
+    .container {
+      font-size: 22px;
+    }
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .accessModalContent {
+    width: 100%;
+    .modal-body {
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .modal-body {
+    width: 70%;
+  }
+}

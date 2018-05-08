@@ -1,0 +1,1152 @@
+/*============    RESET    ===========*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/* hide horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.woff2') format('woff2'), url('../fonts/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url('../fonts/Rubik-Bold.eot');
+  src: url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Rubik-Bold.woff') format('woff'), url('../fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.robotoR {
+  font-family: 'Roboto Regular';
+  font-weight: normal;
+}
+.rubikR {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+}
+.rubikB {
+  font-family: 'Rubik Bold';
+  font-weight: bold;
+  font-style: normal;
+}
+.openSansB {
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+}
+.openSansR {
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+}
+.montserratB {
+  font-family: 'Montserrat Bold';
+  font-weight: bold;
+}
+.montserratR {
+  font-family: 'Montserrat Regular';
+  font-weight: normal;
+}
+/*Variables for colors*/
+.pink {
+  color: #eb61a2;
+}
+.bgPink {
+  background: #eb61a2;
+}
+.black {
+  color: #000000;
+}
+.bgblack {
+  background: #000000;
+}
+.white {
+  color: #ffffff;
+}
+.bgWhite {
+  background: #ffffff;
+}
+.grey {
+  color: #d9d9d9;
+}
+.bgGrey {
+  background: #f0f0f0;
+}
+.h2 {
+  font-family: 'Montserrat Bold';
+  font-weight: bold;
+  font-size: 44px;
+  color: #2f2f2f;
+  line-height: 1.4;
+}
+.addToCart {
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: none;
+  background: #ffffff;
+  padding: 30px 70px;
+  color: #231f20;
+  font-family: 'Roboto Regular';
+  font-weight: normal;
+  font-size: 33px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+header .headerFluid {
+  background: #f7b6cd;
+  height: 65px;
+}
+header .headerFluid .logo img {
+  padding-top: 12px;
+  max-width: 190px;
+  margin: 0 auto;
+}
+/* Come Get Yours Section Start*/
+.comeGetYoursFluid {
+  padding-top: 30px;
+  padding-bottom: 110px;
+  background: #ffffff;
+}
+.comeGetYoursFluid .comeGetYoursContainer .sockImg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+  margin-left: -50px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .h2 {
+  padding-bottom: 20px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+  background: #bdbdbd;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+  padding: 18px 24px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit :-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+  background: #2f2f2f;
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 32px;
+  border: none;
+  padding: 18px 32px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+/* Come Get Yours Section End*/
+/* Grey Section End*/
+.greyFluid {
+  background: #dcdcdc;
+  height: 180px;
+  width: 100%;
+  margin-top: -253px;
+}
+/* Grey Section End*/
+/* About Us Section Start*/
+.aboutUsFluid {
+  background: #000;
+  min-height: 300px;
+}
+.aboutUsFluid .aboutUsContainer .h2 {
+  padding-top: 140px;
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  font-size: 87px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* About Us Section End*/
+/* Partners Section Start*/
+.partnersFluid {
+  background: #ffffff;
+  min-height: 300px;
+}
+.partnersFluid .partnersContainer .h2 {
+  padding-top: 140px;
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+  font-size: 87px;
+  color: #000000;
+  text-transform: uppercase;
+}
+/* Partners Section End*/
+/* Stand Up Section Start*/
+.standUpFluid {
+  width: 100%;
+  min-height: 300px;
+  background: #000000;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.standUpFluid .standUpContainer {
+  background: url("../img/heart.png") no-repeat center top;
+  -webkit-background-size: contain;
+  background-size: contain;
+  min-height: 676px;
+  width: 100%;
+}
+.standUpFluid .standUpContainer .charityWrap .h2 {
+  color: #ffffff;
+  font-family: 'Rubik Bold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 70px;
+}
+.standUpFluid .standUpContainer .charityWrap .charityInner {
+  padding-top: 42%;
+  font-family: 'Roboto Regular';
+  font-weight: normal;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+/* Stand Up Section End*/
+/* Holly Section Start*/
+.hollyFluid {
+  background: url("../img/bgBlue.png") no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 1293px;
+  height: 100%;
+}
+.hollyFluid .hollyContainer {
+  position: relative;
+}
+.hollyFluid .hollyContainer .logoBlue {
+  margin-top: 60px;
+}
+.hollyFluid .hollyContainer .Holly {
+  margin-top: 250px;
+}
+.hollyFluid .hollyContainer .addToCart {
+  margin-top: 64px;
+}
+.hollyFluid .hollyContainer .lerfSockBlue {
+  position: absolute;
+  top: 5%;
+}
+/* Holly Section End*/
+/*Aby section Start*/
+.abyFluid {
+  background: url("../img/bgAby.png") no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 1239px;
+  height: 100%;
+}
+.abyFluid .abyContainer {
+  position: relative;
+}
+.abyFluid .abyContainer .aby {
+  margin-top: 380px;
+}
+.abyFluid .abyContainer .aby-Sock {
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.abyFluid .abyContainer .aby-Sock img {
+  width: 120%;
+}
+/*Aby section End*/
+/* Media queries for Home SECTION*/
+@media (min-width: 0px) and (max-width: 320px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .addToCart {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  header .headerFluid {
+    min-height: 75px;
+  }
+  header .headerFluid .logo img {
+    max-width: 100px;
+  }
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 85%;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+    font-family: 'Open Sans Bold';
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 7px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  /* Come Get Yours Section End*/
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid .aboutUsContainer .h2 {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  /* About Us Section End*/
+  /* Partners Section Start*/
+  .partnersFluid .partnersContainer .h2 {
+    padding-top: 40px;
+    font-family: 'Rubik Regular';
+    font-weight: normal;
+    font-size: 30px;
+  }
+  /* Partners Section End*/
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .standUpFluid .standUpContainer {
+    min-height: 200px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .h2 {
+    margin-top: -50px;
+    font-size: 20px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .charityInner {
+    padding-top: 50%;
+    font-size: 16px;
+  }
+  /* Stand Up Section End*/
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+  }
+  .hollyFluid .hollyContainer .logoBlue {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hollyFluid .hollyContainer .logoBlue img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .Holly {
+    margin-top: 0;
+  }
+  .hollyFluid .hollyContainer .Holly img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .addToCart {
+    margin-top: 10px;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue {
+    position: absolute;
+    top: 20%;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue img {
+    width: 40%;
+  }
+  /* Holly Section End*/
+  /*Aby section Start*/
+  .abyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+  }
+  .abyFluid .abyContainer {
+    position: relative;
+  }
+  .abyFluid .abyContainer .aby {
+    margin-top: 60px;
+  }
+  .abyFluid .abyContainer .aby img {
+    width: 40%;
+  }
+  .abyFluid .abyContainer .addToCart {
+    margin-top: -30px;
+  }
+  .abyFluid .abyContainer .aby-Sock {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+  }
+  .abyFluid .abyContainer .aby-Sock img {
+    width: 100%;
+  }
+  /*Aby section End*/
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .addToCart {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  header .headerFluid {
+    min-height: 75px;
+  }
+  header .headerFluid .logo img {
+    max-width: 100px;
+  }
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 85%;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+    font-family: 'Open Sans Bold';
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 7px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  /* Come Get Yours Section End*/
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid .aboutUsContainer .h2 {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  /* About Us Section End*/
+  /* Partners Section Start*/
+  .partnersFluid .partnersContainer .h2 {
+    padding-top: 40px;
+    font-family: 'Rubik Regular';
+    font-weight: normal;
+    font-size: 30px;
+  }
+  /* Partners Section End*/
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .standUpFluid .standUpContainer {
+    min-height: 200px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .h2 {
+    margin-top: -50px;
+    font-size: 20px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .charityInner {
+    padding-top: 58%;
+    font-size: 16px;
+  }
+  /* Stand Up Section End*/
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+  }
+  .hollyFluid .hollyContainer .logoBlue {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hollyFluid .hollyContainer .logoBlue img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .Holly {
+    margin-top: 0;
+  }
+  .hollyFluid .hollyContainer .Holly img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .addToCart {
+    margin-top: 10px;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue {
+    position: absolute;
+    top: 20%;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue img {
+    width: 40%;
+  }
+  /* Holly Section End*/
+  /*Aby section Start*/
+  .abyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+  }
+  .abyFluid .abyContainer {
+    position: relative;
+  }
+  .abyFluid .abyContainer .aby {
+    margin-top: 60px;
+  }
+  .abyFluid .abyContainer .aby img {
+    width: 40%;
+  }
+  .abyFluid .abyContainer .addToCart {
+    margin-top: -30px;
+  }
+  .abyFluid .abyContainer .aby-Sock {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+  }
+  .abyFluid .abyContainer .aby-Sock img {
+    width: 100%;
+  }
+  /*Aby section End*/
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .addToCart {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  header .headerFluid {
+    min-height: 75px;
+  }
+  header .headerFluid .logo img {
+    max-width: 100px;
+  }
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 85%;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+    font-family: 'Open Sans Bold';
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 7px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  /* Come Get Yours Section End*/
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid .aboutUsContainer .h2 {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  /* About Us Section End*/
+  /* Partners Section Start*/
+  .partnersFluid .partnersContainer .h2 {
+    padding-top: 40px;
+    font-family: 'Rubik Regular';
+    font-weight: normal;
+    font-size: 30px;
+  }
+  /* Partners Section End*/
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .standUpFluid .standUpContainer {
+    min-height: 200px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .h2 {
+    margin-top: -50px;
+    font-size: 30px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .charityInner {
+    padding-top: 58%;
+    font-size: 18px;
+  }
+  /* Stand Up Section End*/
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 600px;
+    height: 100%;
+  }
+  .hollyFluid .hollyContainer .logoBlue {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hollyFluid .hollyContainer .logoBlue img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .Holly {
+    margin-top: 0;
+  }
+  .hollyFluid .hollyContainer .Holly img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .addToCart {
+    margin-top: 10px;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue {
+    position: absolute;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue img {
+    width: 35%;
+  }
+  /* Holly Section End*/
+  /*Aby section Start*/
+  .abyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 600px;
+    height: 100%;
+  }
+  .abyFluid .abyContainer {
+    position: relative;
+  }
+  .abyFluid .abyContainer .aby {
+    margin-top: 60px;
+  }
+  .abyFluid .abyContainer .aby img {
+    width: 40%;
+  }
+  .abyFluid .abyContainer .addToCart {
+    margin-top: -30px;
+  }
+  .abyFluid .abyContainer .aby-Sock {
+    position: absolute;
+    left: 50%;
+  }
+  .abyFluid .abyContainer .aby-Sock img {
+    width: 80%;
+  }
+  /*Aby section End*/
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  /*General Media Settigns start*/
+  .addToCart {
+    padding: 15px 35px;
+    font-size: 18px;
+  }
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  header .headerFluid {
+    min-height: 75px;
+  }
+  header .headerFluid .logo img {
+    max-width: 100px;
+  }
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  /* Come Get Yours Section End*/
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid .aboutUsContainer .h2 {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  /* About Us Section End*/
+  /* Partners Section Start*/
+  .partnersFluid .partnersContainer .h2 {
+    padding-top: 40px;
+    font-family: 'Rubik Regular';
+    font-weight: normal;
+    font-size: 30px;
+  }
+  /* Partners Section End*/
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .standUpFluid .standUpContainer {
+    min-height: 200px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .h2 {
+    margin-top: -50px;
+    font-size: 30px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .charityInner {
+    padding-top: 42%;
+    font-size: 18px;
+  }
+  /* Stand Up Section End*/
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+  }
+  .hollyFluid .hollyContainer .logoBlue {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hollyFluid .hollyContainer .logoBlue img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .Holly {
+    margin-top: 0;
+  }
+  .hollyFluid .hollyContainer .Holly img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .addToCart {
+    margin-top: 60px;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue {
+    position: absolute;
+    top: 20%;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue img {
+    width: 40%;
+  }
+  /* Holly Section End*/
+  /*Aby section Start*/
+  .abyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+  }
+  .abyFluid .abyContainer {
+    position: relative;
+  }
+  .abyFluid .abyContainer .aby {
+    margin-top: 60px;
+  }
+  .abyFluid .abyContainer .aby img {
+    width: 40%;
+  }
+  .abyFluid .abyContainer .addToCart {
+    margin-top: -30px;
+  }
+  .abyFluid .abyContainer .aby-Sock {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+  }
+  .abyFluid .abyContainer .aby-Sock img {
+    width: 90%;
+  }
+  /*Aby section End*/
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .addToCart {
+    padding: 20px 50px;
+    font-size: 22px;
+  }
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .standUpFluid .standUpContainer {
+    min-height: 400px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .h2 {
+    margin-top: -50px;
+    font-size: 33px;
+  }
+  .standUpFluid .standUpContainer .charityWrap .charityInner {
+    padding-top: 42%;
+    font-size: 18px;
+  }
+  /* Stand Up Section End*/
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+  }
+  .hollyFluid .hollyContainer .logoBlue {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hollyFluid .hollyContainer .logoBlue img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .Holly {
+    margin-top: 0;
+  }
+  .hollyFluid .hollyContainer .Holly img {
+    width: 40%;
+  }
+  .hollyFluid .hollyContainer .addToCart {
+    margin-top: 60px;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue {
+    position: absolute;
+    top: 20%;
+  }
+  .hollyFluid .hollyContainer .lerfSockBlue img {
+    width: 40%;
+  }
+  /* Holly Section End*/
+  /*Aby section Start*/
+  .abyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+  }
+  .abyFluid .abyContainer {
+    position: relative;
+  }
+  .abyFluid .abyContainer .aby {
+    margin-top: 60px;
+  }
+  .abyFluid .abyContainer .aby img {
+    width: 40%;
+  }
+  .abyFluid .abyContainer .addToCart {
+    margin-top: -30px;
+  }
+  .abyFluid .abyContainer .aby-Sock {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+  }
+  .abyFluid .abyContainer .aby-Sock img {
+    width: 90%;
+  }
+  /*Aby section End*/
+}
+@media (min-width: 1401px) {
+  .hollyFluid,
+  .abyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 150%;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dirty Socks | Classy</title>
+    <!-- Bootstrap -->
+    <link href="lp-assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lp-assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lp-assets/css/classyStyle.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+<!--The Modal start-->
+<div id="accessModal" class="modal accessModal">
+    <!-- Modal content -->
+    <div class="modal-content accessModalContent">
+        <div class="modal-body">
+            <div class="logoWrap">
+                <img src="lp-assets/img/logo-neon.svg" alt="Logo" class="img-responsive">
+            </div>
+            <div class="enterDateWrap">
+                <div class="answerWrap" id="answerWrap">
+
+                    <p class="enterDate">Are you over 18 years old?</p>
+
+                    <button class="yes" id="submitYesBtn">Yes</button>
+                    <button class="no" id="submitNoBtn">No</button>
+                </div>
+
+                <div class="howDirtyWrap" id="howDirtyWrap">
+                    <p class="howDirty">How Dirty Do You Want It?</p>
+
+
+                    <div class="dirtyLinksWrap">
+                        <div class="dirtyLinks">
+                            <a href="http://www.launch.dirtysocks.com/pg13" class="linkBtn" id="pg13Page"
+                               target="_blank">PG-13</a>
+                            <p class="linkDesc">No nudity</p>
+                        </div>
+
+                        <div class="dirtyLinks">
+                            <a href="http://www.launch.dirtysocks.com/vintageTriangle" class="linkBtn" id="rPage"
+                               target="_blank">R</a>
+
+                            <p class="linkDesc">Some nudity</p>
+
+                        </div>
+
+                        <div class="dirtyLinks">
+                            <a href="http://www.launch.dirtysocks.com/xxx" class="linkBtn" id="xxxPage" target="_blank">XXX</a>
+
+                            <p class="linkDesc">Hardcore porn</p>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="selectLevel">Select your optimal dirtiness level above.</p>
+
+                </div>
+
+
+                <div class="errorBirth" id="errorBirth">You are not more than 18 years old, sorry</div>
+
+                <div class="remember" id="remember">
+                    <label class="container">Remember Me
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!--<button id="myBtn">Close Modal</button>-->
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<!--The Modal end-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lp-assets/js/bootstrap.min.js"></script>
+<script src="lp-assets/js/menuScript.js"></script>
+
+
+<script src="lp-assets/js/classy.js"></script>
+
+
+</body>
+<script>'undefined' === typeof _trfq || (window._trfq = []);
+'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({'tccl.baseHost': 'secureserver.net'}), _trfd.push({'ap': 'cpsh'}, {'server': 'p3plcpnl0829'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0829'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script><script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0829'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script><script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0829'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>

@@ -1,0 +1,1248 @@
+/*============    RESET    ===========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/* hide horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+  url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+  url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+  url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+  url('../fonts/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url('../fonts/Rubik-Bold.eot');
+  src: url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rubik-Bold.woff') format('woff'),
+  url('../fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.robotoR {
+  font-family: 'Roboto Regular';
+  font-weight: normal;
+}
+
+.rubikR {
+  font-family: 'Rubik Regular';
+  font-weight: normal;
+}
+
+.rubikB {
+  font-family: 'Rubik Bold';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.openSansB {
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+}
+
+.openSansR {
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+}
+
+.montserratB {
+  font-family: 'Montserrat Bold';
+  font-weight: bold;
+}
+
+.montserratR {
+  font-family: 'Montserrat Regular';
+  font-weight: normal;
+}
+
+/*Variables for colors*/
+.pink {
+  color: rgb(235, 97, 162);
+}
+
+.bgPink {
+  background: rgb(235, 97, 162);
+}
+
+.black {
+  color: rgb(0, 0, 0);
+}
+
+.bgblack {
+  background: rgb(0, 0, 0);
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.bgWhite {
+  background: rgb(255, 255, 255);
+}
+
+.grey {
+  color: rgb(217, 217, 217);
+}
+
+.bgGrey {
+  background: rgb(240, 240, 240);
+}
+
+.h2 {
+  .montserratB;
+  font-size: 44px;
+  color: #2f2f2f;
+  line-height: 1.4;
+}
+
+.addToCart {
+  border-radius: 50px;
+ border: none;
+  .bgWhite;
+  padding: 30px 70px;
+  color: #231f20;
+  .robotoR;
+  font-size: 33px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+//  HEADER
+header {
+
+  .headerFluid {
+    background: #f7b6cd;
+    height: 65px;
+    .logo {
+      img {
+        padding-top: 12px;
+        max-width: 190px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* Come Get Yours Section Start*/
+.comeGetYoursFluid {
+  padding-top: 30px;
+  padding-bottom: 110px;
+  .bgWhite;
+  .comeGetYoursContainer {
+    .sockImg {
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      .socks {
+        margin-left: -50px;
+      }
+
+    }
+    .h2 {
+      padding-bottom: 20px;
+    }
+
+    .emailAudit {
+      .email {
+        background: #bdbdbd;
+        .openSansB;
+        font-size: 24px;
+        .white;
+        border: none;
+        padding: 18px 24px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+
+      }
+
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        .white;
+        .openSansB;
+        font-size: 24px;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        .white;
+        .openSansB;
+        font-size: 24px;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        .white;
+        .openSansB;
+        font-size: 24px;
+
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        .white;
+        .openSansB;
+        font-size: 24px;
+      }
+      .cumIn {
+        background: #2f2f2f;
+        .white;
+        .openSansB;
+        font-size: 32px;
+        border: none;
+        padding: 18px 32px;
+        border-radius: 8px;
+      }
+    }
+
+  }
+}
+
+/* Come Get Yours Section End*/
+/* Grey Section End*/
+.greyFluid {
+  background: #dcdcdc;
+  height: 180px;
+  width: 100%;
+  margin-top: -253px;
+}
+/* Grey Section End*/
+
+/* About Us Section Start*/
+.aboutUsFluid {
+  background: #000;
+  min-height: 300px;
+  .aboutUsContainer {
+    .h2 {
+      padding-top: 140px;
+      .rubikR;
+      font-size: 87px;
+      .white;
+      text-transform: uppercase;
+    }
+  }
+}
+/* About Us Section End*/
+
+/* Partners Section Start*/
+.partnersFluid {
+  .bgWhite;
+  min-height: 300px;
+  .partnersContainer {
+    .h2 {
+      padding-top: 140px;
+      .rubikR;
+      font-size: 87px;
+      .black;
+      text-transform: uppercase;
+    }
+  }
+}
+/* Partners Section End*/
+
+/* Stand Up Section Start*/
+.standUpFluid {
+  width: 100%;
+  min-height: 300px;
+  .bgblack;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  .standUpContainer {
+    background: url("../img/heart.png") no-repeat center top;
+    background-size: contain;
+    min-height: 676px;
+    width: 100%;
+    .charityWrap {
+      .h2 {
+        .white;
+        .rubikB;
+        font-size: 70px;
+
+      }
+      .charityInner {
+        padding-top: 42%;
+        .robotoR;
+        font-size: 30px;
+        .white;
+        line-height: 1.6;
+
+      }
+    }
+
+  }
+}
+/* Stand Up Section End*/
+
+/* Holly Section Start*/
+.hollyFluid {
+  background: url("../img/bgBlue.png") no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 1293px;
+  height: 100%;
+  .hollyContainer {
+    position: relative;
+    .logoBlue {
+      margin-top: 60px;
+    }
+    .Holly {
+      margin-top: 250px;
+    }
+    .addToCart{
+      margin-top: 64px;
+    }
+    .lerfSockBlue {
+      position: absolute;
+      top: 5%;
+    }
+  }
+}
+/* Holly Section End*/
+
+/*Aby section Start*/
+.abyFluid{
+  background: url("../img/bgAby.png") no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 1239px;
+  height: 100%;
+  .abyContainer{
+    position: relative;
+    .aby{
+      margin-top: 380px;
+    }
+    .aby-Sock{
+      position: absolute;
+      left: 50%;
+      top: 0;
+      img{
+        width: 120%;
+      }
+    }
+  }
+}
+/*Aby section End*/
+
+/* Media queries for Home SECTION*/
+
+@media (min-width: 0px) and (max-width: 320px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .addToCart {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .headerFluid {
+      min-height: 75px;
+
+      .logo {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    .comeGetYoursContainer {
+      .sockImg {
+        width: 85%;
+        .socks {
+          margin-left: -20px;
+        }
+
+      }
+      .emailAudit {
+        .email {
+          .openSansB;
+          font-size: 18px;
+          .white;
+          padding: 10px 7px;
+          ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 18px;
+          }
+          ::-moz-placeholder { /* Firefox 19+ */
+            font-size: 18px;
+          }
+          :-ms-input-placeholder { /* IE 10+ */
+            font-size: 18px;
+
+          }
+          :-moz-placeholder { /* Firefox 18- */
+            font-size: 18px;
+          }
+        }
+        .cumIn {
+          font-size: 18px;
+          padding: 10px 10px;
+        }
+      }
+
+    }
+  }
+
+  /* Come Get Yours Section End*/
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid {
+    .aboutUsContainer {
+      .h2 {
+        padding-top: 40px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  /* About Us Section End*/
+  /* Partners Section Start*/
+  .partnersFluid {
+    .partnersContainer {
+      .h2 {
+        padding-top: 40px;
+        .rubikR;
+        font-size: 30px;
+      }
+    }
+  }
+
+  /* Partners Section End*/
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .standUpContainer {
+      min-height: 200px;
+      .charityWrap {
+        .h2 {
+          margin-top: -50px;
+          font-size: 20px;
+        }
+        .charityInner {
+          padding-top: 50%;
+          font-size: 16px;
+        }
+      }
+
+    }
+  }
+
+  /* Stand Up Section End*/
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+    .hollyContainer {
+      .logoBlue {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+          width: 40%;
+        }
+      }
+      .Holly {
+        margin-top: 0;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: 10px;
+      }
+      .lerfSockBlue {
+        position: absolute;
+        top: 20%;
+        img{
+          width: 40%;
+        }
+      }
+    }
+  }
+  /* Holly Section End*/
+  /*Aby section Start*/
+  .abyFluid{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+    .abyContainer{
+      position: relative;
+      .aby{
+        margin-top: 60px;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: -30px;
+      }
+      .aby-Sock{
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  /*Aby section End*/
+
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .addToCart {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .headerFluid {
+      min-height: 75px;
+
+      .logo {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    .comeGetYoursContainer {
+      .sockImg {
+        width: 85%;
+        .socks {
+          margin-left: -20px;
+        }
+
+      }
+      .emailAudit {
+        .email {
+          .openSansB;
+          font-size: 18px;
+          .white;
+          padding: 10px 7px;
+          ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 18px;
+          }
+          ::-moz-placeholder { /* Firefox 19+ */
+            font-size: 18px;
+          }
+          :-ms-input-placeholder { /* IE 10+ */
+            font-size: 18px;
+
+          }
+          :-moz-placeholder { /* Firefox 18- */
+            font-size: 18px;
+          }
+        }
+        .cumIn {
+          font-size: 18px;
+          padding: 10px 10px;
+        }
+      }
+
+    }
+  }
+
+  /* Come Get Yours Section End*/
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid {
+    .aboutUsContainer {
+      .h2 {
+        padding-top: 40px;
+        font-size: 30px;
+      }
+    }
+  }
+  /* About Us Section End*/
+
+  /* Partners Section Start*/
+  .partnersFluid {
+    .partnersContainer {
+      .h2 {
+        padding-top: 40px;
+        .rubikR;
+        font-size: 30px;
+      }
+    }
+  }
+  /* Partners Section End*/
+
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .standUpContainer {
+      min-height: 200px;
+      .charityWrap {
+        .h2 {
+          margin-top: -50px;
+          font-size: 20px;
+        }
+        .charityInner {
+          padding-top: 58%;
+          font-size: 16px;
+        }
+      }
+
+    }
+  }
+  /* Stand Up Section End*/
+
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+    .hollyContainer {
+      .logoBlue {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+          width: 40%;
+        }
+      }
+      .Holly {
+        margin-top: 0;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: 10px;
+      }
+      .lerfSockBlue {
+        position: absolute;
+        top: 20%;
+        img{
+          width: 40%;
+        }
+      }
+    }
+  }
+  /* Holly Section End*/
+
+  /*Aby section Start*/
+  .abyFluid{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 100px;
+    height: 80%;
+    .abyContainer{
+      position: relative;
+      .aby{
+        margin-top: 60px;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: -30px;
+      }
+      .aby-Sock{
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  /*Aby section End*/
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .addToCart {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .headerFluid {
+      min-height: 75px;
+
+      .logo {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  /*Header end*/
+
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    .comeGetYoursContainer {
+      .sockImg {
+        width: 85%;
+        .socks {
+          margin-left: -20px;
+        }
+
+      }
+      .emailAudit {
+        .email {
+          .openSansB;
+          font-size: 18px;
+          .white;
+          padding: 10px 7px;
+          ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 18px;
+          }
+          ::-moz-placeholder { /* Firefox 19+ */
+            font-size: 18px;
+          }
+          :-ms-input-placeholder { /* IE 10+ */
+            font-size: 18px;
+
+          }
+          :-moz-placeholder { /* Firefox 18- */
+            font-size: 18px;
+          }
+        }
+        .cumIn {
+          font-size: 18px;
+          padding: 10px 10px;
+        }
+      }
+
+    }
+  }
+  /* Come Get Yours Section End*/
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid {
+    .aboutUsContainer {
+      .h2 {
+        padding-top: 40px;
+        font-size: 30px;
+      }
+    }
+  }
+  /* About Us Section End*/
+
+  /* Partners Section Start*/
+  .partnersFluid {
+    .partnersContainer {
+      .h2 {
+        padding-top: 40px;
+        .rubikR;
+        font-size: 30px;
+      }
+    }
+  }
+  /* Partners Section End*/
+
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .standUpContainer {
+      min-height: 200px;
+      .charityWrap {
+        .h2 {
+          margin-top: -50px;
+          font-size: 30px;
+        }
+        .charityInner {
+          padding-top: 58%;
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+  /* Stand Up Section End*/
+
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 600px;
+    height: 100%;
+    .hollyContainer {
+      .logoBlue {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+          width: 40%;
+        }
+      }
+      .Holly {
+        margin-top: 0;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: 10px;
+      }
+      .lerfSockBlue {
+        position: absolute;
+        img{
+          width: 35%;
+        }
+      }
+    }
+  }
+  /* Holly Section End*/
+
+  /*Aby section Start*/
+  .abyFluid{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 600px;
+    height: 100%;
+    .abyContainer{
+      position: relative;
+      .aby{
+        margin-top: 60px;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: -30px;
+      }
+      .aby-Sock{
+        position: absolute;
+        left: 50%;
+        img{
+          width: 80%;
+        }
+      }
+    }
+  }
+  /*Aby section End*/
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /*General Media Settigns start*/
+  .addToCart {
+    padding: 15px 35px;
+    font-size: 18px;
+  }
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .headerFluid {
+      min-height: 75px;
+      .logo {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  /*Header end*/
+
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    .comeGetYoursContainer {
+      .sockImg {
+        width: 65%;
+        margin: 0 auto;
+        .socks {
+          margin-left: -20px;
+        }
+
+      }
+
+    }
+  }
+  /* Come Get Yours Section End*/
+
+  /* Grey Section Start*/
+  .greyFluid {
+    display: none;
+  }
+  /* Grey Section End*/
+  /* About Us Section Start*/
+  .aboutUsFluid {
+    .aboutUsContainer {
+      .h2 {
+        padding-top: 40px;
+        font-size: 30px;
+      }
+    }
+  }
+  /* About Us Section End*/
+
+  /* Partners Section Start*/
+  .partnersFluid {
+    .partnersContainer {
+      .h2 {
+        padding-top: 40px;
+        .rubikR;
+        font-size: 30px;
+      }
+    }
+  }
+  /* Partners Section End*/
+
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .standUpContainer {
+      min-height: 200px;
+      .charityWrap {
+        .h2 {
+          margin-top: -50px;
+          font-size: 30px;
+        }
+        .charityInner {
+          padding-top: 42%;
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+  /* Stand Up Section End*/
+
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+    .hollyContainer {
+      .logoBlue {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+          width: 40%;
+        }
+      }
+      .Holly {
+        margin-top: 0;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: 60px;
+      }
+      .lerfSockBlue {
+        position: absolute;
+        top: 20%;
+        img{
+          width: 40%;
+        }
+      }
+    }
+  }
+  /* Holly Section End*/
+
+  /*Aby section Start*/
+  .abyFluid{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+    .abyContainer{
+      position: relative;
+      .aby{
+        margin-top: 60px;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: -30px;
+      }
+      .aby-Sock{
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        img{
+          width: 90%;
+        }
+      }
+    }
+  }
+  /*Aby section End*/
+
+  }
+
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .addToCart {
+    padding: 20px 50px;
+    font-size: 22px;
+  }
+  /* Stand Up Section Start*/
+  .standUpFluid {
+    min-height: 450px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .standUpContainer {
+      min-height: 400px;
+      .charityWrap {
+        .h2 {
+          margin-top: -50px;
+          font-size: 33px;
+        }
+        .charityInner {
+          padding-top: 42%;
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+  /* Stand Up Section End*/
+  /* Holly Section Start*/
+  .hollyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+    .hollyContainer {
+      .logoBlue {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        img{
+          width: 40%;
+        }
+      }
+      .Holly {
+        margin-top: 0;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: 60px;
+      }
+      .lerfSockBlue {
+        position: absolute;
+        top: 20%;
+        img{
+          width: 40%;
+        }
+      }
+    }
+  }
+  /* Holly Section End*/
+
+  /*Aby section Start*/
+  .abyFluid{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height: 900px;
+    height: 100%;
+    .abyContainer{
+      position: relative;
+      .aby{
+        margin-top: 60px;
+        img{
+          width: 40%;
+        }
+      }
+      .addToCart{
+        margin-top: -30px;
+      }
+      .aby-Sock{
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        img{
+          width: 90%;
+        }
+      }
+    }
+  }
+  /*Aby section End*/
+
+}
+
+@media (min-width: 1401px)  {
+
+  .hollyFluid, .abyFluid {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    min-height:150%;
+  }
+}

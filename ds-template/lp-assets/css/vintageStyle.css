@@ -1,0 +1,1064 @@
+/*============    RESET    ===========*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/* hide horizontal scroll */
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+.openSansB {
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+}
+.openSansR {
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+}
+.montserratB {
+  font-family: 'Montserrat Bold';
+  font-weight: bold;
+}
+.montserratR {
+  font-family: 'Montserrat Regular';
+  font-weight: normal;
+}
+/*Variables for colors*/
+.pink {
+  color: #eb61a2;
+}
+.bgPink {
+  background: #eb61a2;
+}
+.black {
+  color: #000000;
+}
+.bgblack {
+  background: #000000;
+}
+.white {
+  color: #ffffff;
+}
+.bgWhite {
+  background: #ffffff;
+}
+.grey {
+  color: #d9d9d9;
+}
+.bgGrey {
+  background: #f0f0f0;
+}
+.h2 {
+  font-family: 'Montserrat Bold';
+  font-weight: bold;
+  font-size: 44px;
+  color: #2f2f2f;
+  line-height: 1.4;
+}
+header .headerFluid {
+  background: #f7b6cd;
+  height: 65px;
+}
+header .headerFluid .logo img {
+  padding-top: 12px;
+  max-width: 190px;
+  margin: 0 auto;
+}
+/* Come Get Yours Section Start*/
+.comeGetYoursFluid {
+  padding-top: 30px;
+  padding-bottom: 110px;
+  background: #ffffff;
+}
+.comeGetYoursFluid .comeGetYoursContainer .sockImg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+  margin-left: -50px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .h2 {
+  padding-bottom: 20px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+  width: 100%;
+  max-width: 400px;
+  background: #bdbdbd;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+  padding: 18px 24px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit :-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+.comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+  width: 100%;
+  max-width: 290px;
+  background: #2f2f2f;
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+  font-size: 32px;
+  border: none;
+  padding: 12.5px 28px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+/* Come Get Yours Section End*/
+/* Our Partners Section Start*/
+.ourPartnersFluid {
+  margin-top: -253px;
+  background: #d5d5d5;
+  min-height: 400px;
+}
+.ourPartnersFluid .ourPartnersContainer .h2 {
+  display: block;
+  max-width: 300px;
+}
+.ourPartnersFluid .ourPartnersContainer .partnersWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner {
+  width: 250px;
+  margin-bottom: 20px;
+}
+.ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #ffb0cc;
+}
+.ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner p {
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+  font-size: 21px;
+  color: #373737;
+  padding-top: 8px;
+}
+.ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner p span {
+  font-family: 'Open Sans Bold';
+  font-weight: bold;
+}
+/*Our Partners Section End*/
+/*Who  are we?  section Start*/
+.whoAreWeFluid {
+  background: #f6f6f6;
+}
+.whoAreWeFluid .whoAreWeContainer {
+  padding-top: 125px;
+  padding-bottom: 100px;
+}
+.whoAreWeFluid .whoAreWeContainer .h2 {
+  margin-bottom: 115px;
+}
+.whoAreWeFluid .whoAreWeContainer p {
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+  font-size: 24px;
+  color: #000000;
+  padding-bottom: 50px;
+}
+.whoAreWeFluid .whoAreWeContainer .socksBlue {
+  position: absolute;
+  left: 50px;
+  top: -300px;
+}
+/*Who  are we?  section End*/
+/*Charity section Start*/
+.charityFluid {
+  background: #252324;
+  padding-bottom: 20px;
+}
+.charityFluid .charityContainer .charityWrap .h2 {
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.charityFluid .charityContainer .charityWrap p {
+  color: #f6b6cc;
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+  font-size: 32px;
+}
+.charityFluid .charityContainer .charityInner {
+  padding: 50px 63px;
+}
+.charityFluid .charityContainer .charityInner p {
+  font-family: 'Montserrat Regular';
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 2.7;
+}
+/*Charity section End*/
+/* Media queries for Home SECTION*/
+@media (min-width: 0px) and (max-width: 320px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+  .h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  header .headerFluid {
+    min-height: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .headerFluid .logo img {
+    padding-top: 0;
+    width: 105px;
+  }
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 85%;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+    font-family: 'Open Sans Bold';
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 10px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  /* Come Get Yours Section End*/
+  /* Our Partners Section Start*/
+  .ourPartnersFluid {
+    margin-top: 0px;
+    padding-top: 10px;
+    background: #d5d5d5;
+    min-height: 400px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .h2 {
+    display: block;
+    max-width: 600px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner {
+    width: 250px;
+    margin-bottom: 35px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #ffb0cc;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 21px;
+    color: #373737;
+    padding-top: 8px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInnerLastHidden {
+    display: none;
+  }
+  /*Our Partners Section End*/
+  /*Who  are we?  section Start*/
+  .whoAreWeFluid {
+    background: #f6f6f6;
+  }
+  .whoAreWeFluid .whoAreWeContainer {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .whoAreWeFluid .whoAreWeContainer .h2 {
+    margin-bottom: 20px;
+  }
+  .whoAreWeFluid .whoAreWeContainer p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 22px;
+  }
+  .whoAreWeFluid .whoAreWeContainer .socksBlue {
+    display: none;
+  }
+  /*Who  are we?  section End*/
+  /*Charity section Start*/
+  .charityFluid {
+    padding-bottom: 30px;
+  }
+  .charityFluid .charityContainer .charityWrap .h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .charityFluid .charityContainer .charityWrap p {
+    color: #f6b6cc;
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+  }
+  .charityFluid .charityContainer .charityInner {
+    padding: 12px;
+  }
+  .charityFluid .charityContainer .charityInner p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  /*Charity section End*/
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+  .h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  header .headerFluid {
+    min-height: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .headerFluid .logo img {
+    padding-top: 0;
+    width: 105px;
+  }
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 85%;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+    font-family: 'Open Sans Bold';
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 10px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  /* Come Get Yours Section End*/
+  /* Our Partners Section Start*/
+  .ourPartnersFluid {
+    margin-top: 0px;
+    padding-top: 10px;
+    background: #d5d5d5;
+    min-height: 400px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .h2 {
+    display: block;
+    max-width: 600px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner {
+    width: 250px;
+    margin-bottom: 35px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #ffb0cc;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 21px;
+    color: #373737;
+    padding-top: 8px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInnerLastHidden {
+    display: none;
+  }
+  /*Our Partners Section End*/
+  /*Who  are we?  section Start*/
+  .whoAreWeFluid {
+    background: #f6f6f6;
+  }
+  .whoAreWeFluid .whoAreWeContainer {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .whoAreWeFluid .whoAreWeContainer .h2 {
+    margin-bottom: 20px;
+  }
+  .whoAreWeFluid .whoAreWeContainer p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 22px;
+  }
+  .whoAreWeFluid .whoAreWeContainer .socksBlue {
+    display: none;
+  }
+  /*Who  are we?  section End*/
+  /*Charity section Start*/
+  .charityFluid {
+    padding-bottom: 30px;
+  }
+  .charityFluid .charityContainer .charityWrap .h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .charityFluid .charityContainer .charityWrap p {
+    color: #f6b6cc;
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+  }
+  .charityFluid .charityContainer .charityInner {
+    padding: 12px;
+  }
+  .charityFluid .charityContainer .charityInner p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  /*Charity section End*/
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /*General Media Settigns start*/
+  p {
+    font-size: 18px;
+  }
+  .h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  /*General Media Settigns end*/
+  /*Header start*/
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  header .headerFluid {
+    min-height: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  header .headerFluid .logo img {
+    padding-top: 0;
+    width: 110px;
+  }
+  /*Header end*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 85%;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .email {
+    font-family: 'Open Sans Bold';
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 10px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 18px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .emailAudit .cumIn {
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  /* Come Get Yours Section End*/
+  /* Our Partners Section Start*/
+  .ourPartnersFluid {
+    margin-top: 0px;
+    padding-top: 10px;
+    background: #d5d5d5;
+    min-height: 400px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .h2 {
+    display: block;
+    max-width: 600px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner {
+    width: 250px;
+    margin-bottom: 35px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #ffb0cc;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 21px;
+    color: #373737;
+    padding-top: 8px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInnerLastHidden {
+    display: none;
+  }
+  /*Our Partners Section End*/
+  /*Who  are we?  section Start*/
+  .whoAreWeFluid {
+    background: #f6f6f6;
+  }
+  .whoAreWeFluid .whoAreWeContainer {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .whoAreWeFluid .whoAreWeContainer .h2 {
+    margin-bottom: 20px;
+  }
+  .whoAreWeFluid .whoAreWeContainer p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 22px;
+  }
+  .whoAreWeFluid .whoAreWeContainer .socksBlue {
+    display: none;
+  }
+  /*Who  are we?  section End*/
+  /*Charity section Start*/
+  .charityFluid {
+    padding-bottom: 30px;
+  }
+  .charityFluid .charityContainer .charityWrap .h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .charityFluid .charityContainer .charityWrap p {
+    color: #f6b6cc;
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+  }
+  .charityFluid .charityContainer .charityInner {
+    padding: 12px;
+  }
+  .charityFluid .charityContainer .charityInner p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  /*Charity section End*/
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  /*General Media Settigns start*/
+  /* Come Get Yours Section Start*/
+  .comeGetYoursFluid {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .comeGetYoursFluid .comeGetYoursContainer .sockImg .socks {
+    margin-left: -20px;
+  }
+  /* Come Get Yours Section End*/
+  /* Our Partners Section Start*/
+  .ourPartnersFluid {
+    margin-top: 0px;
+    padding-top: 30px;
+    background: #d5d5d5;
+    min-height: 400px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .h2 {
+    display: block;
+    max-width: 900px;
+    text-align: center;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 35px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner {
+    width: 200px;
+    margin-bottom: 35px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #ffb0cc;
+  }
+  .ourPartnersFluid .ourPartnersContainer .partnersWrap .partnersInner p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 21px;
+    color: #373737;
+    padding-top: 8px;
+  }
+  /*Our Partners Section End*/
+  /*Who  are we?  section Start*/
+  .whoAreWeFluid {
+    background: #f6f6f6;
+  }
+  .whoAreWeFluid .whoAreWeContainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .whoAreWeFluid .whoAreWeContainer .h2 {
+    margin-bottom: 30px;
+  }
+  .whoAreWeFluid .whoAreWeContainer p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 30px;
+  }
+  .whoAreWeFluid .whoAreWeContainer .socksBlue {
+    display: none;
+  }
+  /*Who  are we?  section End*/
+  /*Charity section Start*/
+  .charityFluid {
+    padding-bottom: 30px;
+  }
+  .charityFluid .charityContainer .charityWrap .h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .charityFluid .charityContainer .charityWrap p {
+    color: #f6b6cc;
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .charityFluid .charityContainer .charityInner {
+    padding: 12px;
+  }
+  .charityFluid .charityContainer .charityInner p {
+    font-size: 16px;
+  }
+  /*Charity section End*/
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Our Partners Section Start*/
+  .ourPartnersFluid {
+    margin-top: -140px;
+  }
+  .ourPartnersFluid .ourPartnersContainer .h2 {
+    max-width: 900px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  /*Our Partners Section End*/
+  /*Who  are we?  section Start*/
+  .whoAreWeFluid {
+    background: #f6f6f6;
+  }
+  .whoAreWeFluid .whoAreWeContainer {
+    padding-top: 55px;
+  }
+  .whoAreWeFluid .whoAreWeContainer .h2 {
+    margin-bottom: 55px;
+  }
+  .whoAreWeFluid .whoAreWeContainer p {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 24px;
+    color: #000000;
+    padding-bottom: 50px;
+  }
+  .whoAreWeFluid .whoAreWeContainer .socksBlue {
+    top: -120px;
+    width: 80%;
+  }
+  /*Who  are we?  section End*/
+  /*Charity section Start*/
+  .charityFluid .charityContainer .charityInner {
+    padding: 50px 63px;
+  }
+  .charityFluid .charityContainer .charityInner p {
+    font-family: 'Montserrat Regular';
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 2;
+  }
+  /*Charity section End*/
+}
